@@ -1,0 +1,14 @@
+name: Setup AXION
+on:
+  codespace:
+    types: [create]
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Tools
+        run: |
+          sudo apt update
+          sudo apt install -y nmap whatweb gobuster nikto hydra sqlmap aircrack-ng macchanger
