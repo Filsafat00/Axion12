@@ -1,6 +1,7 @@
 {
   "name": "Kali Linux",
   "image": "kalilinux/kali-rolling",
+  "remoteUser": "root",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
